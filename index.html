@@ -1,81 +1,60 @@
 <!DOCTYPE html>
+<!-- this doctype tag tells the browser that this file is of type HTML -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Bio Page</title>
-    <link rel="stylesheet" type="text/css" href="css1/style.css">
-    
-    <style>
-body {
-    background-color: #efeee7;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333333;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #333333;
-}
-h1 {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #eee;
-    font-size: 28px;
-    text-align: center;
-}
-h2 {
-    font-size: 24px;
-}
-.container {
-    width: 1024px;
-    margin: 0 auto;
-}
-#main-bio,
-#contact-info,
-#bio-image {
-    float: left;
-}
-#bio-image {
-    width: 200px;
-    height: 200px;
-    alt: unset;
-    margin-right: 20px;
-}
-#main-bio {
-    width: 70%;
-}
-#contact-info {
-    width: 30%;
-    line-height: 1.5;
-}
-a {
-    color: #d21034;
-}
-    </style>
-    
-</head>
+     <!-- this html tag tells the browser that the CODE is of type HTML -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this sets up the webpage to be mobile friendly. (first) mobile responsive -->
+        <title>My Webpage</title>
+        <!-- the title tag displays the title of the page in a browser tab -->
+        <!-- link to the external css -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <!-- this head tags tells the browser that the code inside it needs to execute first-->
+    <body>
+        <!-- the body tag contains the content that is physically web browser itself-->
+        <header>
+            <h1>Student Bio</h1>
+        </header>
+        <div class="container">
+            <section id="main-bio">
 
+            </section>
+        </div>
+        <!-- the div tag divides each paragraphs into blocks-->
+        <section id="main-bio">
+            <h2>My Bio Page</h2>
+    <img id="bio-image" src="./bioimage.jpg" alt="your name">
+    <!--the img tag helps to embed an image in the web page, while the attributes src specifies the path of the image and alt specifies an alternate text for the image-->
 <body>
-  <header>
-    <h1>Abiodun Barry-Kayode</h1>
-  </header>  
+    <p>Hi, I'm Abiodun Barry. <I></I> reside in Calgary, Alberta.</p>
+    <p>I'm a Cybersecurity Analyst. I'm currently undergoing Web Development program through SkillHat.</p>
+     <!--this is a paragraph tag that blocks a bunch of text into a paragraph-->
+     <body>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="Abiodun" name="Abiodun"><br><br>
 
-  <div class="container">
-    <section id="main-bio">
-        <h2>Main Bio Section</h2>
-        <p>I'm a Cybersecurity professional. Also, currently learning Web Development through SkillHat program to become an expect in Web Development.</p>
-    </section>
-    <section id="contact-info">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="abiodun.barrykayode@gmail.com">abiodun.barrykayode@gmail.com</a></p>
-        <p>Phone: <a href="tel:+18254541988">+18254541988</a></p>
-        <p>Github: <a href="barrykay83">barrykay83</a></p>
-        <p>Portfolio: <a href="Coming Soon">Coming Soon</a></p>
-    </section>
+            <label for="abiodun.barrykayode@gmail.com">Email:</label>
+            <input type="text" id="abiodun.barrykayode@gmail.com" name="abiodun.barrykayode@gmail.com"><br><br>
 
-    <img id="bio-image" src="C:\Users\HP PC\Downloads\ABARRY.jpg" alt="A Bio Image">
-  </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
 
-</body>
+            <input type="submit" value="send">
+        </form>
+        </section>
+            <section id="contact-info">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li><strong>Contact <Meta:desc></Meta:desc>:</strong> <a href="./contactus.html">Click Here</a></li>
+                    <li><strong>Github:</strong> <a href="#">SampleName</a></li>
+                    <li><strong>Porfolio:</strong> <a href="#">Coming soon</a></li>
+                
+                </ul>
+            </section>
+
+        </div>
+    </body>
 </html>
